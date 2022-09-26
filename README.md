@@ -29,5 +29,6 @@ Todos os atributos dessa tabela devem ser funcionalmente independentes uns dos o
 - [ ] Extraí-las para outra tabela;
 
 Fontes de consulta:
+
 https://learn.microsoft.com/pt-br/office/troubleshoot/access/database-normalization-description#normalizing-an-example-table
 http://www.dsc.ufcg.edu.br/~pet/jornal/maio2011/materias/recapitulando.html
