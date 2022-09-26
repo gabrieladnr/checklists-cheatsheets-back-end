@@ -3,9 +3,9 @@
 ## 1º Forma Normal
 Todos os atributos de uma tabela devem ser atômicos, ou seja, a tabela não deve conter grupos repetidos e nem atributos com mais de um valor. 
 
--[ ] Identificar a chave primária da tabela;
--[ ] Remover colunas repetidas;
--[ ] Remover dados repetidos;
+-[] Identificar a chave primária da tabela;
+- [ ] Remover colunas repetidas;
+- [] Remover dados repetidos;
 -[ ] Assegurar que as colunas possuam apenas um valor;
 -[ ] Assegurar que os valores em uma coluna sejam do mesmo tipo de dados;
 -[ ] Nomear cada coluna deve com um nome único;
