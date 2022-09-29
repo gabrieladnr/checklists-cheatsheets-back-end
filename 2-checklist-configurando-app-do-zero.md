@@ -24,6 +24,7 @@ Sugestões de configurações aqui: https://github.com/dustinspecker/awesome-esl
 
 ## 5. Criar arquivos de configuração do ESLint
  >.eslintignore: usado para que o ESLint ignore arquivos e diretórios específicos
+ 
  >.eslintrc.json: usado para sobrescrever regras do ESLint
  
  `
