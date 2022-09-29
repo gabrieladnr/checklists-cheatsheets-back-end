@@ -74,10 +74,12 @@ Conseidere que o segundo parâmetro da função .listen() poderia ser outra fun�
 
 ## Verifique se está funcionando
 Adicione ao arquivo app.js realizando uma requisição simples com o seguinte código:
+
 `app.get('/', (req, res) => {
   res.send('Hello World!')
 })`
 
+Vá até localhost:3013 no navegador e verifique se Hello World aparece na tela
 
 Documentação oficial: 
 http://expressjs.com/en/starter/hello-world.html
