@@ -44,4 +44,6 @@ touch .gitignore
 `
 ## 6. Ignorar node_modules no git
  Dentro do arquivo .gitignore, digite:
- `node_modules
+ `sh 
+node_modules
+`
