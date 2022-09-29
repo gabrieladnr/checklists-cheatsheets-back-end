@@ -53,7 +53,9 @@ Esse arquivo será utilizado para a importação e exportação do Express, e po
 Dentro do arquivo criado acima, digite todo o código abaixo:
 
  `const express = require('express');` Aqui importamos o pacote do Express
+ 
 `const app = express();` Aqui atribuimos à app a função express() e iniciamos o pacote do Express na aplicação
+
 `module.exports = app;` Aqui exportamos a variável app e o que ela contém (no caso express())
 
 ## 6. Criar um arquivo base para o servidor
@@ -64,6 +66,7 @@ Esse arquivo será utilizado para a inicialização do servidor, e pode ser por 
 Dentro do arquivo criado acima, digite todo o código abaixo:
 
 `const app = require('./app');` Aqui importamos app, que contém o pacote do Express
+
 `app.listen(3013, () => console.log('servidor inicializado'));` Aqui iniciamos o servidor e rodamos 
 
 Considere que 3013 é apenas um número qualquer passado para a porta
