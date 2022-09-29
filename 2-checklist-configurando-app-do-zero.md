@@ -1,34 +1,32 @@
-
 # Checklist confuguração básica com Node.js e Express
 
 Configurando um app com Node.js e Express do zero passo a passo:
 
 ## 1. Criar o diretório da aplicação, um diretório raiz e entrar no diretório da aplicação
- `sh
+ `
 mkdir nome-do-app nome-do-app/src && cd nome-do-app
 `
 ## 2. Iniciar um pacote Node.js com a configuração padrão
- `sh
+ `
 npm init -y
 `
 ## 3. Iniciar o framework Express
  > Aqui utilizamos a versão 4.17
 
-`sh
+`
 npm i express@4.17
 `
 ## 4. Iniciar o ESLint desejado
- `sh 
+ `
 npm install --save-dev eslint-config-nome-da-config-escolhida
 `
-
 Sugestões de configurações aqui: https://github.com/dustinspecker/awesome-eslint
 
 ## 5. Criar arquivos de configuração do ESLint
  >.eslintignore: usado para que o ESLint ignore arquivos e diretórios específicos
  >.eslintrc.json: usado para sobrescrever regras do ESLint
  
- `sh
+ `
 touch .eslintignore .eslintrc.json
 `
 ## 6. Ignorar o ESLint no node_modules
@@ -36,15 +34,47 @@ touch .eslintignore .eslintrc.json
  `node_modules
  `
 ## 7. Iniciar um repositório git na aplicação
- `sh 
+ `
 git init 
 `
 ## 8. Criar um arquivo de configuração do git
- `sh 
+ `
 touch .gitignore
 `
 ## 6. Ignorar node_modules no git
  Dentro do arquivo .gitignore, digite:
- `sh 
-node_modules
-`
+ `node_modules
+ `
+## 6. Criar um arquivo base para a aplicação
+Esse arquivo será utilizado para a importação e exportação do Express, e pode ser por exemplo:
+ `touch app.js
+ `
+## 7. Importar o Express
+Dentro do arquivo criado acima, digite todo o código abaixo:
+
+ `const express = require('express');` Aqui importamos o pacote do Express
+`const app = express();` Aqui atribuimos à app a função express() e iniciamos o pacote do Express na aplicação
+`module.exports = app;` Aqui exportamos a variável app e o que ela contém (no caso express())
+
+## 6. Criar um arquivo base para o servidor
+Esse arquivo será utilizado para a inicialização do servidor, e pode ser por exemplo:
+ `touch server.js
+ `
+## 8. Importar e iniciar o Express
+Dentro do arquivo criado acima, digite todo o código abaixo:
+
+`const app = require('./app');` Aqui importamos app, que contém o pacote do Express
+`app.listen(3013, () => console.log('servidor inicializado'));` Aqui iniciamos o servidor e rodamos 
+
+Considere que 3013 é apenas um número qualquer passado para a porta
+Conseidere que o segundo parâmetro da função .listen() poderia ser outra função que não console.log
+
+## Verifique se está funcionando
+Adicione ao arquivo app.js realizando uma requisição simples com o seguinte código:
+`app.get('/', (req, res) => {
+  res.send('Hello World!')
+})`
+
+
+Documentação oficial: 
+http://expressjs.com/en/starter/hello-world.html
