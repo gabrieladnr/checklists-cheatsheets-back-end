@@ -21,6 +21,7 @@ npm i express@4.17
  `sh 
 npm install --save-dev eslint-config-nome-da-config-escolhida
 `
+
 Sugestões de configurações aqui: https://github.com/dustinspecker/awesome-eslint
 
 ## 5. Criar arquivos de configuração do ESLint
