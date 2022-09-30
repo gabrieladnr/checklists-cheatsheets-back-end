@@ -74,7 +74,7 @@ Considere que 3013 é apenas um número qualquer passado para a porta
 
 Conseidere que o segundo parâmetro da função .listen() poderia ser outra função que não console.log
 
-## Verifique se está funcionando
+## 9. Verifique se está funcionando
 Adicione ao arquivo app.js realizando uma requisição simples com o seguinte código:
 
 `app.get('/', (req, res) => {
