@@ -71,6 +71,7 @@ Dentro do arquivo criado acima, digite todo o código abaixo:
 `app.listen(3013, () => console.log('servidor inicializado'));` Aqui iniciamos o servidor e rodamos 
 
 Considere que 3013 é apenas um número qualquer passado para a porta
+
 Conseidere que o segundo parâmetro da função .listen() poderia ser outra função que não console.log
 
 ## Verifique se está funcionando
