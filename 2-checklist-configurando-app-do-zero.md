@@ -81,6 +81,8 @@ Adicione ao arquivo app.js realizando uma requisição simples com o seguinte c�
   res.send('Hello World!')
 })`
 
+Em seguida inicie a aplicação com `npm start`
+
 Vá até localhost:3013 no navegador e verifique se Hello World aparece na tela
 
 
