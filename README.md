@@ -3,5 +3,5 @@
 1) Normalização de banco de dados pelas três primeiras formas normais
 2) Configuração básica de uma aplicação do zero com Node.js e Express
 3) Principais comando Docker
-4) Checklist configuração básica com Sequelize
+4) Checklist configuração básica com Sequelize em aplicação Node.js
 
